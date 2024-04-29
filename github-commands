@@ -1,0 +1,11 @@
+Push
+
+git add .
+git commit -m "message"
+git push -u origin master
+
+Restore
+
+git checkout master
+git fetch origin master
+git reset --hard origin/master
