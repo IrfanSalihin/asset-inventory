@@ -50,7 +50,8 @@
 
         input[type="text"],
         input[type="email"],
-        input[type="password"] {
+        input[type="password"],
+        select {
             width: 100%;
             padding: 12px;
             border-radius: 5px;
@@ -58,12 +59,19 @@
             font-size: 16px;
             transition: border-color 0.3s ease;
             box-sizing: border-box;
+            appearance: none;
+            /* Removes default arrow */
+            background-color: #fff;
+            /* Set background color */
         }
 
         input[type="text"]:focus,
         input[type="email"]:focus,
-        input[type="password"]:focus {
+        input[type="password"]:focus,
+        select:focus {
             border-color: #007bff;
+            outline: none;
+            /* Remove default focus outline */
         }
 
         .btn {
@@ -96,6 +104,7 @@
         .login-link a:hover {
             text-decoration: underline;
         }
+        
     </style>
 </head>
 
@@ -123,6 +132,14 @@
             <div class="form-group">
                 <label for="password_confirmation">Confirm Password</label>
                 <input id="password_confirmation" type="password" name="password_confirmation" required autocomplete="new-password">
+            </div>
+
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" name="role" required>
+                    <option value="User">User</option>
+                    <option value="Admin">Admin</option>
+                </select>
             </div>
 
             <button type="submit" class="btn">Register</button>
