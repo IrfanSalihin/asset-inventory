@@ -12,10 +12,8 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background-image: url('images/welcome.jpg');
-            /* Replace with your background image URL */
-            background-size: cover;
-            background-position: center;
+            background-color: black;
+            /* Changed from background-image to background-color */
             display: flex;
             justify-content: center;
             align-items: center;
