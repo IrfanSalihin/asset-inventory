@@ -3,7 +3,6 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ITInventoryController;
 use App\Http\Controllers\NavigationController;
-use App\Http\Controllers\AssetController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,7 +34,5 @@ Route::get('/it-inventory', [ITInventoryController::class, 'index'])->name('it-i
 
 Route::post('/add-link', [NavigationController::class, 'addLink'])->name('add-link');
 Route::delete('/delete-link/{id}', [NavigationController::class, 'deleteLink'])->name('delete-link');
-
-Route::get('/asset/{type}', [AssetController::class, 'show'])->name('asset-details');
 
 require __DIR__.'/auth.php';

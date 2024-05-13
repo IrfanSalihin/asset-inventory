@@ -125,7 +125,7 @@
                 <nav class="flex-1">
                     <ul class="p-2">
                         <li><a href="{{ route('dashboard') }}" class="block py-2 px-4 hover:bg-gray-700">Dashboard</a></li>
-                        <li><a href="{{ route('it-inventory') }}" class="block py-2 px-4 hover:bg-gray-700">Asset</a></li>
+                        <li><a href="{{ route('it-inventory') }}" class="block py-2 px-4 hover:bg-gray-700">IT Inventory</a></li>
                         <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Email Inventory</a></li>
                         <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">User Management</a></li>
                     </ul>
