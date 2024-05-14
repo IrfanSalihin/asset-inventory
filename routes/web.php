@@ -41,4 +41,4 @@ Route::get('/asset/{type}', [AssetController::class, 'show'])->name('asset-detai
 
 Route::resource('desktops', DesktopController::class);
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

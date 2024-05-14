@@ -118,7 +118,7 @@
             <div class="h-full flex flex-col justify-between">
                 <!-- Logo or Title -->
                 <div class="p-4 text-center">
-                    <span class="text-2xl font-bold">Your App</span>
+                    <span class="text-2xl font-bold">App</span>
                 </div>
 
                 <!-- Navigation Links -->

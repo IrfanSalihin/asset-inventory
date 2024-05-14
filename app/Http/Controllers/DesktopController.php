@@ -7,10 +7,27 @@ use Illuminate\Http\Request;
 
 class DesktopController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $desktops = Desktop::paginate(20);
-        return view('desktop.index', compact('desktops'));
+        $search = $request->input('search');
+        $location = $request->input('location');
+
+        $query = Desktop::query();
+
+        if ($search) {
+            $query->where('assigned_staff_name', 'LIKE', '%' . $search . '%');
+        }
+
+        if ($location) {
+            $query->where('location', $location);
+        }
+
+        $desktops = $query->paginate(20);
+
+        // Fetch distinct locations for the dropdown
+        $locations = Desktop::select('location')->distinct()->pluck('location');
+
+        return view('desktop.index', compact('desktops', 'locations'));
     }
 
     public function create()
