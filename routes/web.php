@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ITInventoryController;
 use App\Http\Controllers\NavigationController;
 use App\Http\Controllers\AssetController;
+use App\Http\Controllers\DesktopController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,5 +38,7 @@ Route::post('/add-link', [NavigationController::class, 'addLink'])->name('add-li
 Route::delete('/delete-link/{id}', [NavigationController::class, 'deleteLink'])->name('delete-link');
 
 Route::get('/asset/{type}', [AssetController::class, 'show'])->name('asset-details');
+
+Route::resource('desktops', DesktopController::class);
 
 require __DIR__.'/auth.php';
