@@ -127,7 +127,9 @@
                         <li><a href="{{ route('dashboard') }}" class="block py-2 px-4 hover:bg-gray-700">Dashboard</a></li>
                         <li><a href="{{ route('it-inventory') }}" class="block py-2 px-4 hover:bg-gray-700">Asset</a></li>
                         <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">Email Inventory</a></li>
-                        <li><a href="#" class="block py-2 px-4 hover:bg-gray-700">User Management</a></li>
+                        @can('manage-users')
+                        <li><a href="{{ route('users.index') }}" class="block py-2 px-4 hover:bg-gray-700">User Management</a></li>
+                        @endcan
                     </ul>
                 </nav>
 
