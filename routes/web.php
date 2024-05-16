@@ -44,5 +44,7 @@ Route::resource('desktops', DesktopController::class);
 
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
+Route::put('/users/{user}', [UserController::class, 'update'])->name('users.update');
+
 
 require __DIR__ . '/auth.php';

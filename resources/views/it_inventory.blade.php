@@ -14,6 +14,7 @@
                     <h3 class="text-2xl font-semibold mb-8 text-center">Manage Your Assets</h3>
 
                     <!-- Add New Asset Section -->
+                    @can('manage-assets')
                     <div class="mb-8">
                         <h4 class="text-xl font-semibold mb-4">Add New Asset</h4>
                         <form action="{{ route('add-link') }}" method="POST" enctype="multipart/form-data">
@@ -31,6 +32,7 @@
                             <button type="submit" class="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-3 rounded hover:shadow-md">Add Asset</button>
                         </form>
                     </div>
+                    @endcan
 
                     <!-- Existing Assets Section -->
                     <div>
