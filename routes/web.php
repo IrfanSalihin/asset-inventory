@@ -6,6 +6,7 @@ use App\Http\Controllers\NavigationController;
 use App\Http\Controllers\AssetController;
 use App\Http\Controllers\DesktopController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,5 +47,7 @@ Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
 Route::put('/users/{user}', [UserController::class, 'update'])->name('users.update');
 
+Route::get('/admin/register', [AdminController::class, 'showRegistrationForm'])->name('admin.register');
+Route::post('/admin/register', [AdminController::class, 'register'])->name('admin.register.store');
 
 require __DIR__ . '/auth.php';
