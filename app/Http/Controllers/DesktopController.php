@@ -11,6 +11,7 @@ class DesktopController extends Controller
     {
         $search = $request->input('search');
         $location = $request->input('location');
+        $status = $request->input('status');
 
         $query = Desktop::query();
 
@@ -20,6 +21,10 @@ class DesktopController extends Controller
 
         if ($location) {
             $query->where('location', $location);
+        }
+
+        if ($status) {
+            $query->where('status', $status);
         }
 
         $desktops = $query->paginate(20);
