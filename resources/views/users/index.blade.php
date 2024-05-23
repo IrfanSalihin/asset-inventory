@@ -12,13 +12,9 @@
                     <h3 class="text-2xl mb-4 flex justify-between items-center">
                         Manage Users
                         <!-- Add User Button -->
-                        <a href="{{ route('admin.register') }}" class="inline-flex items-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md shadow-md transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 text-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 2a1 1 0 00-1 1v6H3a1 1 0 100 2h6v6a1 1 0 102 0v-6h6a1 1 0 100-2h-6V3a1 1 0 00-1-1z" clip-rule="evenodd" />
-                            </svg>
-                            Add User
-                        </a>
+                        <a href="{{ route('admin.register') }}" class="block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded text-center text-sm">Add User</a>
                     </h3>
+
                     <table class="min-w-full divide-y divide-gray-200">
                         <thead class="bg-gray-50">
                             <tr>
