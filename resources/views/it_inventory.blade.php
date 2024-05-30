@@ -1,5 +1,3 @@
-<!-- resources/views/it_inventory.blade.php -->
-
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-3xl text-gray-800 leading-tight">
@@ -18,6 +16,20 @@
                         <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Laptops</a>
                         <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Cameras</a>
                         <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Other</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Printers</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Smartphones</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">iPads</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Voice Recorders</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Projectors</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">MyCard Readers</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Barcode Scanners</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Walkie Talkies</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">UPS</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Software</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Hard Discs</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Photostat Machines</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Reserved</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Damaged</a>
                     </div>
                 </div>
             </div>

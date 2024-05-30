@@ -2,19 +2,19 @@
 
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-3xl text-gray-800 leading-tight">
+        <h2 class="font-semibold text-3xl text-gray-900 leading-tight">
             Desktop Details
         </h2>
     </x-slot>
 
-    <div class="py-12 bg-gray-100">
+    <div class="py-12 bg-gray-50">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-lg sm:rounded-lg">
+            <div class="bg-white overflow-hidden shadow-xl rounded-lg">
                 <div class="p-8 bg-white border-b border-gray-200">
                     <!-- Desktop Information -->
                     <div class="mb-8">
-                        <h4 class="text-2xl font-semibold mb-4 text-gray-800">Desktop Information</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <h4 class="text-2xl font-bold mb-6 text-gray-900">Desktop Information</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             @php
                             $details = [
                             'Assigned Staff' => 'assigned_staff_name',
@@ -55,8 +55,8 @@
 
                             @foreach ($details as $label => $attribute)
                             @if (!in_array($attribute, ['antivirus_expired_date', 'antivirus_license']) || $desktop->antivirus === "Available")
-                            <div class="bg-gray-50 p-6 rounded-lg shadow-md border border-gray-200">
-                                <p class="text-lg font-semibold text-gray-800 mb-2">{{ $label }}:</p>
+                            <div class="bg-white p-6 rounded-lg shadow-md border border-gray-200">
+                                <p class="text-lg font-semibold text-gray-700 mb-1">{{ $label }}:</p>
                                 <p class="text-gray-600">{{ $desktop->$attribute }}</p>
                             </div>
                             @endif
