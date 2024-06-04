@@ -5,6 +5,7 @@ use App\Http\Controllers\ITInventoryController;
 use App\Http\Controllers\NavigationController;
 use App\Http\Controllers\AssetController;
 use App\Http\Controllers\DesktopController;
+use App\Http\Controllers\LaptopController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
@@ -42,6 +43,7 @@ Route::delete('/delete-link/{id}', [NavigationController::class, 'deleteLink'])-
 Route::get('/asset/{type}', [AssetController::class, 'show'])->name('asset-details');
 
 Route::resource('desktops', DesktopController::class);
+Route::resource('laptops', LaptopController::class);
 
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');

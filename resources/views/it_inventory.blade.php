@@ -12,22 +12,21 @@
                     <h3 class="text-2xl font-semibold mb-8 text-center">Manage Your Assets</h3>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        <a href="{{ route('desktops.index') }}" class="block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-6 rounded text-center">Desktops</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Laptops</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Cameras</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Other</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Printers</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Smartphones</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">iPads</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Voice Recorders</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Projectors</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">MyCard Readers</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Barcode Scanners</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Walkie Talkies</a>
+                        <a href="{{ route('desktops.index') }}" class="block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-6 rounded text-center">Desktop</a>
+                        <a href="{{ route('laptops.index') }}" class="block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-6 rounded text-center">Laptop</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Camera</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Printer</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Smartphone</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">iPad</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Voice Recorder</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Projector</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">MyCard Reader</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Barcode Scanner</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Walkie Talkie</a>
                         <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">UPS</a>
                         <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Software</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Hard Discs</a>
-                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Photostat Machines</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Hard Disc</a>
+                        <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Photostat Machine</a>
                         <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Reserved</a>
                         <a href="#" class="block bg-gray-600 text-white font-bold py-4 px-6 rounded text-center cursor-not-allowed" title="Coming soon">Damaged</a>
                     </div>
